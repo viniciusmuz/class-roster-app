@@ -6,7 +6,14 @@ import java.util.List;
 
 public class ClassRosterView {
 
-    private UserIO io = new UserIOConsoleImpl();
+    private UserIO io;
+
+    public ClassRosterView(UserIO io) {
+        this.io = io;
+    }
+
+    // Menu.
+
     public int printMenuAndGetSelection() {
         io.print("Main Menu");
         io.print("1. List Students");
@@ -17,6 +24,18 @@ public class ClassRosterView {
         return io.readInt("Please select from the above choices.");
     }
 
+    // Get student ID.
+    public String getStudentIdChoice() {
+        return io.readString("Please enter the student ID: ");
+    }
+
+
+    // Create new student.
+
+    public void displayCreateStudentBanner() {
+        io.print("=== Create Student ===");
+    }
+
     public Student getNewStudentInfo() {
         Student currentStudent = new Student(io.readString("Please enter student ID: "));
         currentStudent.setFirstName(io.readString("Please enter the student's first name: "));
@@ -24,6 +43,18 @@ public class ClassRosterView {
         currentStudent.setCohort(io.readString("Please enter the student's cohort: "));
 
         return currentStudent;
+    }
+
+    public void displayCreateSuccessBanner() {
+        io.readString(
+                "Student successfully created. Please hit enter to continue");
+    }
+
+
+    // Display all students.
+
+    public void displayDisplayAllBanner() {
+        io.print("=== Display All Students ===");
     }
 
     public void displayStudentList(List<Student> students) {
@@ -38,20 +69,55 @@ public class ClassRosterView {
         io.readString("Please hit enter to continue.");
     }
 
-    public void print(String toPrint) {
-        io.print(toPrint);
+    // View a student.
+
+    public void displayDisplayStudentBanner() {
+        io.print("=== Display Student ===");
     }
 
-    public void displayCreateStudentBanner() {
-        io.print("=== Create Student ===");
+    public void displayStudent(Student student) {
+        if (student != null) {
+            io.print(student.getStudentID());
+            io.print(student.getFirstName() + " " + student.getLastName());
+            io.print(student.getCohort());
+            io.print("");
+        }
+        else {
+            io.print("No such student");
+        }
+        io.readString("Please hit 'enter' to continue.");
     }
 
-    public void displayCreateSuccessBanner() {
-        io.readString(
-                "Student successfully created. Please hit enter to continue");
+    // Remove a student.
+
+    public void displayRemoveStudentBanner() {
+        io.print("=== Remove Student ===");
     }
 
-    public void displayDisplayAllBanner() {
-        io.print("=== Display All Students ===");
+    public void displayRemoveResult(Student student) {
+        if (student != null) {
+            io.print("Student removed successfully.");
+        }
+        else {
+            io.print("No such student.");
+        }
+        io.readString("Press 'enter' to continue.");
     }
+
+    // Exit banner.
+    public void displayExitBanner() {
+        io.print("Good Bye!!!");
+    }
+
+    // Unknown command banner.
+    public void displayUnknownCommandBanner() {
+        io.print("Unknown Command!!!");
+    }
+
+    // Error message.
+    public void displayErrorMessage (String errorMessage) {
+        io.print("=== ERROR ===");
+        io.print(errorMessage);
+    }
+
 }

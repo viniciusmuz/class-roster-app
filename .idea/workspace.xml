@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab34019e-266a-4887-9aa1-c5506a15c042" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class-roster-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sg/classroster/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sg/classroster/controller/ClassRosterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sg/classroster/dao/ClassRosterDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sg/classroster/dao/ClassRosterDaoFileImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sg/classroster/dto/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sg/classroster/ui/ClassRosterView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sg/classroster/ui/UserIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sg/classroster/ui/UserIOConsoleImpl.java" afterDir="false" />
+    <list default="true" id="ab34019e-266a-4887-9aa1-c5506a15c042" name="Changes" comment="Implemented: list all students and create student (storing on RAM)">
+      <change afterPath="$PROJECT_DIR$/src/com/sg/classroster/dao/ClassRosterDaoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sg/classroster/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sg/classroster/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sg/classroster/controller/ClassRosterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sg/classroster/controller/ClassRosterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sg/classroster/dao/ClassRosterDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sg/classroster/dao/ClassRosterDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sg/classroster/dao/ClassRosterDaoFileImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sg/classroster/dao/ClassRosterDaoFileImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sg/classroster/ui/ClassRosterView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sg/classroster/ui/ClassRosterView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +80,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638402865838</updated>
-      <workItem from="1638402871829" duration="7094000" />
+      <workItem from="1638402871829" duration="7175000" />
+      <workItem from="1638704426579" duration="9031000" />
     </task>
+    <task id="LOCAL-00001" summary="Implemented: list all students and create student (storing on RAM)">
+      <created>1638445142949</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638445142949</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,5 +109,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Implemented: list all students and create student (storing on RAM)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented: list all students and create student (storing on RAM)" />
   </component>
 </project>
